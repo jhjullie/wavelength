@@ -1,0 +1,32 @@
+#navbar{
+    background-color:black;
+    
+}
+ul{
+    font-size: 20px;
+    
+}
+
+li{
+    display:inline;
+    float:right;
+    margin-right:30px;
+    
+}
+
+#logo_li{
+    float:left;
+    
+}
+
+#logo_img{
+    width:150px;
+}
+
+#signincontainer{
+    display:block;
+    /* background-color:yellow; */
+    margin-top:300px;
+    clear: both;
+    text-align:center;
+}
