@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
 #navbar{
     background-color:black;
-    
+    margin-top:30px;
 }
 ul{
     font-size: 20px;
@@ -11,7 +14,7 @@ li{
     display:inline;
     float:right;
     margin-right:30px;
-    
+    cursor:pointer;
 }
 
 #logo_li{
@@ -27,4 +30,25 @@ li{
     display:block;
     clear:both;
     text-align:center;
+    /* background-color: blanchedalmond; */
+}
+
+#header{
+    font-family: 'Sacramento', cursive;
+    font-size:70px;
+    padding:20px;
+    margin:0;
+}
+
+#profile{
+    background-color: white;
+    margin:auto;
+    width:450px;
+    height:500px;
+    border-radius: 25px;
+    border: 2px solid #E3F600;
+}
+
+#yesnoicons{
+    font-size:100px;
 }

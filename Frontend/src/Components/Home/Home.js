@@ -26,7 +26,7 @@ function Home() {
 
           <Link to = "/signin" style={{ textDecoration: 'none' }}>
             <Button variant="outlined" color="secondary" classname="buttons">
-                Sign In
+                Log In
             </Button>
           </Link>
        

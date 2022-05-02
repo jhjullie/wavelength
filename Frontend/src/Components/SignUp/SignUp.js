@@ -6,7 +6,7 @@ import '../SignIn/SignIn.css'
 
 
 function SignUp(){
-
+    
     return (
         <>
         
@@ -14,7 +14,7 @@ function SignUp(){
            
             <ul>
             <li>
-                <Link to="/signin">Sign Up</Link>
+            <Link to="/signin" style={{ textDecoration: 'none', color:'black' }}>Log In</Link>
             </li>
             <li id="logo_li">
                 <Link to="/">

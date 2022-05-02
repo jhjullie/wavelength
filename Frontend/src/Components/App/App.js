@@ -17,6 +17,8 @@ import SignIn from "../SignIn/SignIn";
 import SignUp from "../SignUp/SignUp";
 //import discover component
 import Discover from "../Discover/Discover";
+//import matches component
+import Matches from "../Matches/Matches";
 
 
 function App() {
@@ -31,6 +33,7 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element = {<SignUp />} />
         <Route path="/discover" element = {<Discover />} />
+        <Route path="/matches" element = {<Matches />} />
       </Routes>
 
   </>
