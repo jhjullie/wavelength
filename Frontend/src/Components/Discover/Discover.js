@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Routes, Route, Link, useNavigate, Navigate} from "react-router-dom";
+import { useState, useEffect } from 'react';
 import logo from './../../../src/wavelength.svg';
 import '../Discover/Discover.css';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
@@ -8,17 +9,29 @@ import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import LogoutIcon from '@mui/icons-material/Logout';
 import CancelIcon from '@mui/icons-material/Cancel';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import Tab from '@mui/material/Tab'
-import Tabs from '@mui/material/Tabs'
+import { IconButton } from '@mui/material';
+import TinderCard from 'react-tinder-card';
+import { CurrencyYenTwoTone } from '@mui/icons-material';
+
 
 
 
 function Discover(){
-    const [value, setValue] = React.useState(0);
+    const [people, setPeople] = useState([
+        {
+            name:'tiffany',
+        },
+        {
+            name:'ashley',
+        },
+        {
+            name:'pete',
+        },
+        {
+            name:'jullie',
+        }
 
-    const handleChange = (event, newValue) => {
-    setValue(newValue);
-    };
+    ]);
     
     const navigate = useNavigate();
     function logout(){
@@ -27,8 +40,12 @@ function Discover(){
         return navigate('/');
     }
 
+
+
+
     return(
         <>
+        
         <div id="navbar" >
            <ul>
                
@@ -38,22 +55,17 @@ function Discover(){
                </li>
 
                 <li>
-                    <Link to="/discover" style={{ textDecoration: 'none', color: 'black' }}>
+                    <Link to="/profile" style={{ textDecoration: 'none', color: 'black' }}>
                     < AccountCircleIcon fontSize="large"/>
                     </Link>
 
                </li>
                
                <li>
-               {/* <Tabs value={value} onChange={handleChange} textColor="secondary" indicatorColor="secondary">
-                    <LinkTab icon={<HomeRoundedIcon fontSize="medium"/>} label="DISCOVER" href="/signin"/>
-                    <Tab icon={<FavoriteRoundedIcon />} label="MATCHES" />
-                    <Tab icon={<AccountCircleIcon />} label="PROFILE" />
-                    <Tab icon={<LogoutIcon />} label="LOGOUT" />
-                </Tabs> */}
-                <Link to="/matches" style={{ textDecoration: 'none', color: 'black' }}>
-                    <FavoriteRoundedIcon fontSize="large"/>
-                </Link>
+               
+                    <Link to="/matches" style={{ textDecoration: 'none', color: 'black' }}>
+                        <FavoriteRoundedIcon fontSize="large"/>
+                    </Link>
                </li>
                <li>
                     <Link to="/discover" style={{ textDecoration: 'none', color: 'black' }}>
@@ -63,23 +75,40 @@ function Discover(){
             
            <li id="logo_li">
                <Link to="/" style={{ textDecoration: 'none' }}>
-                   <img src={logo} id="logo_img" alt="logo" />
+                   {/* <img src={logo} id="logo_img" alt="logo" /> */}
+                   〰️
                </Link>
            </li>
            </ul>
            
        </div>
+       
        <div id="maincontainer">
-            <p id="header">Find your Match</p>
-            <div id="profile">
-                Name, Age
-                <div id="yesnoicons">
-                    <CancelIcon fontSize="large"/>
-                    <CheckCircleIcon fontSize="large" />
-                </div>
+            <p id="discoverheader">Find Your Match</p>
+            <div id="allcards">
+                
+                {people.map((person) => (
+                    
+                    <TinderCard className="swipe" key={person.name} preventSwipe={["up","down"]}>
+                        <div id="profile">
+                            <h1>Name: {person.name} </h1>
+
+                        </div>
+                    </TinderCard>
+                ))}
                 
             </div>
+            <div className="swipebuttons">
+                <IconButton id="nobutton"  >
+                    <CancelIcon fontSize="large" />
+                </IconButton>
+
+                <IconButton id="yesbutton" >
+                    <CheckCircleIcon fontSize="large" />
+                </IconButton>
+            </div>
        </div>
+       
        
         
         

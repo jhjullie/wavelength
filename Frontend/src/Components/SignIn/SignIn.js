@@ -82,7 +82,8 @@ function SignIn(){
             </li>
             <li id="logo_li">
                 <Link to="/" style={{ textDecoration: 'none' }}>
-                    <img src={logo} id="logo_img" alt="logo" />
+                    {/* <img src={logo} id="logo_img" alt="logo" /> */}
+                    〰️
                 </Link>
             </li>
             </ul>
@@ -93,7 +94,7 @@ function SignIn(){
             <img src={logo} id="mainlogo" alt="logo" />
             {/* <pre>{JSON.stringify(inputs)}</pre> */}
             <div id="signinform">
-                <p id="header" >Log In</p>
+                <p id="signinheader" >Log In</p>
                 <form onSubmit={handleSubmit} >
                 <label >
                     <p>Email</p>

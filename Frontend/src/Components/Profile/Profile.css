@@ -30,9 +30,20 @@ li{
     text-align:center;
 }
 
-#matchesheader{
+#profileheader{
     font-family: 'Sacramento', cursive;
     font-size:50px;
     padding-bottom: 5px !important;
     margin:0 !important;
+}
+
+#myprofile{
+    background-color: white;
+    margin:auto;
+    width:450px;
+    height:500px;
+    border-radius: 25px;
+    border: 2px solid #E3F600;
+    box-shadow:0px 18px 53px 0px rgba(0,0,0,0.3);
+    
 }

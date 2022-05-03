@@ -13,12 +13,14 @@ li{
     display:inline;
     float:right;
     margin-right:30px;
+    padding-top: 10px;
     
 }
 
 #logo_li{
     float:left;
-    
+    font-size:60px;
+    padding:0 !important;
 }
 
 #logo_img{
@@ -48,7 +50,7 @@ li{
     text-align:left;    
     padding:50px;
 }
-#header{
+#signinheader{
     text-align:center;
     font-size: 30px !important;
     font-family: 'Roboto', sans-serif !important; 
@@ -64,7 +66,9 @@ li{
     height: 30px;
     width:100%;
     background-color:#E3F600;
+    /* background-color:#1645D3; */
     margin-top:30px;
+    box-shadow:none !important;
 }
 
 .errormsg{

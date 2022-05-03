@@ -1,14 +1,13 @@
 import * as React from 'react';
 import { Routes, Route, Link, useNavigate, Navigate} from "react-router-dom";
 import logo from './../../../src/wavelength.svg';
-import '../Matches/Matches.css';
+import '../Profile/Profile.css';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import LogoutIcon from '@mui/icons-material/Logout';
 
-function Matches(){
-
+function Profile(){
     const navigate = useNavigate();
     function logout(){
         //clear data first??
@@ -27,18 +26,18 @@ function Matches(){
 
                 <li>
                     <Link to="/profile" style={{ textDecoration: 'none', color: 'black' }}>
-                        < AccountCircleIcon fontSize="large"/>
+                    < AccountCircleIcon fontSize="large"/>
                     </Link>
                </li>
                
                <li>
-                    <Link to="/matches" style={{ textDecoration: 'none', color: 'black' }}>
-                        <FavoriteRoundedIcon fontSize="large"/>
-                    </Link>
+                <Link to="/matches" style={{ textDecoration: 'none', color: 'black' }}>
+                    <FavoriteRoundedIcon fontSize="large"/>
+                </Link>
                </li>
                <li>
                     <Link to="/discover" style={{ textDecoration: 'none', color: 'black' }}>
-                        < HomeRoundedIcon fontSize="large"/>
+                    < HomeRoundedIcon fontSize="large"/>
                     </Link>
                </li>
             
@@ -52,12 +51,15 @@ function Matches(){
            
        </div>
         <div id="maincontainer">
-            <p id="matchesheader">Your Matches</p>
-            
+            <p id="profileheader">My Profile</p>
+            <div id="myprofile">
+                <h1>Name: </h1>
+
+            </div>
         </div>
-        
+
         </>
     );
 }
 
-export default Matches;
+export default Profile;

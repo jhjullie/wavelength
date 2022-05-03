@@ -12,7 +12,7 @@ function Home() {
     return (
       
       <Container maxWidth="sm" className="Home">
-        <Paper elevation={0} >
+        {/* <Paper elevation={0} > */}
           
           <img src={logo} className="App-logo" alt="logo" />
           <Typography variant="h4" component="h1" gutterBottom>
@@ -30,7 +30,7 @@ function Home() {
             </Button>
           </Link>
        
-        </Paper>
+        {/* </Paper> */}
       </Container>
   
     );
