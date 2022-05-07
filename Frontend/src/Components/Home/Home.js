@@ -16,11 +16,11 @@ function Home() {
           
           <img src={logo} className="App-logo" alt="logo" />
           <Typography variant="h4" component="h1" gutterBottom>
-            Dating app based on music taste.
+            A Dating app based on music taste.
           </Typography>
           <Link to = "/signup" style={{ textDecoration: 'none' }}>
             <Button variant="contained" color="primary" classname= "buttons">
-              Join
+              Join Now!
             </Button>
             </Link>
 

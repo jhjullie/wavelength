@@ -1,6 +1,11 @@
 {
   "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/material": "^5.6.4",
     "react-router": "^6.3.0",
-    "react-router-dom": "6"
+    "react-router-dom": "6",
+    "react-tinder-card": "^1.4.5"
   }
 }
