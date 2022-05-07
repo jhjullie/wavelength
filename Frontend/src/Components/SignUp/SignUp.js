@@ -95,7 +95,7 @@ function SignUp(){
                         <p>First Name</p>
                         <input type="text" id="firstName" class="textField" value={inputs.firstName} onChange={handleChange} />
                             </label>
-                        <p className="errormsg">{errors.email }</p>
+                        <p className="errormsg">{errors.name }</p>
 
                         <label >
                             <p>Email</p>
