@@ -44,15 +44,14 @@ li{
     border-radius: 25px;
     border: 2px solid #E3F600;
     width:700px;
-    height:350px;
+    height:400px;
     margin:auto;
     text-align:left;    
     padding:50px;
 }
 
-
 #signupform input{
-    height:30px;
+    height:20px;
     width:100%;
     
 }
@@ -69,4 +68,12 @@ li{
 
 .errormsg{
     color:red;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
 }

@@ -89,18 +89,48 @@ function SignUp(){
                 <form onSubmit={handleSubmit} >
                 <div id="signupform">
 
-                <label >
-                    <p>Email</p>
-                    <input type="text" name= "email" value={inputs.email} onChange={handleChange} />
-                </label>
-                <p className="errormsg">{errors.email }</p>
-                <label>
-                    <p>Password</p>
-                    <input type="password" name= "password" value={inputs.password} onChange={handleChange} />
-                </label>
-                <p className= "errormsg">{errors.password }</p>
-                
-                
+                <div class="row">
+                    <div class="column">
+                        <label >
+                        <p>First Name</p>
+                        <input type="text" id="firstName" class="textField" value={inputs.firstName} onChange={handleChange} />
+                            </label>
+                        <p className="errormsg">{errors.email }</p>
+
+                        <label >
+                            <p>Email</p>
+                            <input type="text" id="email" name= "email" value={inputs.email} onChange={handleChange} />
+                        </label>
+                        <p className="errormsg">{errors.email }</p>
+
+                        <label>
+                            <p>Password</p>
+                            <input type="text" id="password" name= "password" value={inputs.password} onChange={handleChange} />
+                        </label>
+                        <p className= "errormsg">{errors.password }</p>
+                            </div>
+                    <div class="column">
+                        <label >
+                        <p>Your Preference</p>
+                        </label>
+                        <input type="text" id="preference" name= "preference" value={inputs.preference} onChange={handleChange} />
+
+                        
+                        <p className="errormsg">{errors.preference }</p>
+
+                        <label >
+                            <p>Favorite Genre</p>
+                            <input type="text" id="genre"name= "genre" value={inputs.genre} onChange={handleChange} />
+                        </label>
+                        <p className="errormsg">{errors.preference }</p>
+                        
+                        <label >
+                            <p>Favorite Artist</p>
+                            <input type="text" id="artist" name= "artist" value={inputs.artist} onChange={handleChange} />
+                        </label>
+                        <p className="errormsg">{errors.preference }</p>                                
+                    </div>
+                </div>
             </div>
             <div>
                     <Button type="submit" id="signupbutton" variant="contained" color="primary"> Sign Up</Button>
