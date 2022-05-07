@@ -115,7 +115,6 @@ function SignUp(){
                         </label>
                         <input type="text" id="preference" name= "preference" value={inputs.preference} onChange={handleChange} />
 
-                        
                         <p className="errormsg">{errors.preference }</p>
 
                         <label >
@@ -123,12 +122,7 @@ function SignUp(){
                             <input type="text" id="genre"name= "genre" value={inputs.genre} onChange={handleChange} />
                         </label>
                         <p className="errormsg">{errors.preference }</p>
-                        
-                        <label >
-                            <p>Favorite Artist</p>
-                            <input type="text" id="artist" name= "artist" value={inputs.artist} onChange={handleChange} />
-                        </label>
-                        <p className="errormsg">{errors.preference }</p>                                
+                                                     
                     </div>
                 </div>
             </div>
